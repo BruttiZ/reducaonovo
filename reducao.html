@@ -19,7 +19,7 @@
     <input type="number" id="valorInput" placeholder="Digite o valor" oninput="calcularDesconto()">
 
     <p>Valor Original: <span id="valorOriginal">R$ 0.00</span></p>
-    <p>Desconto (75%): <span id="desconto">R$ 0.00</span></p>
+    <p>Desconto (80%): <span id="desconto">R$ 0.00</span></p>
     <p>Valor Total com Desconto: <span id="valorComDesconto">R$ 0.00</span></p>
 
     <!-- Adicione esta parte no final do corpo </body> -->
@@ -47,7 +47,7 @@
             var valorComDescontoElement = document.getElementById("valorComDesconto");
 
             if (!isNaN(valor) && valor > 0) {
-                var desconto = valor * 0.75;
+                var desconto = valor * 0.8;
                 var valorComDesconto = valor - desconto;
 
                 valorOriginalElement.textContent = `R$ ${valor.toFixed(2)}`;
